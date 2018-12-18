@@ -11,30 +11,6 @@ public class HowMany {
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random();
 		System.out.print("How many times would you like to roll the die: ");
-		String numbTest = input.nextLine();
-		boolean isGood = false;
-		while (isGood == false) {
-			for (int i = 0; i < numbTest.length()-1; i++) {
-				switch(numbTest.charAt(i)) {
-					case '0':
-					case '1':
-					case '2':
-					case '3':
-					case '4':
-					case '5':
-					case '6':
-					case '7':
-					case '8':
-					case '9': 
-						isGood = true;
-						break;    
-					default: 
-						isGood = false;
-						break;
-				}
-			}
-			
-		}
 		int numb = input.nextInt();
 		while (numb < 0) {
 			System.out.print("Input is invalid. Please try another number: ");
